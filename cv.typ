@@ -178,7 +178,7 @@
 #let side = {
 block[
 #set par(justify: true)
-#emph["Passionate programmer with a deep love for cutting-edge technology, open-source software. Skilled in software development, data analysis, and DevOps, with a strong focus on building stable, efficient solutions."]
+#emph["Passionate programmer with a deep love for cutting-edge technology and open-source software. Skilled in software development, data analysis, and DevOps, with a strong focus on building stable, efficient solutions."]
 ]
 block[
 #v(5pt)
