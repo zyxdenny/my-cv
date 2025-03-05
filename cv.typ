@@ -213,6 +213,6 @@ block[
     rows: (auto, auto, auto),
     row-gutter: 12pt,
     title[Yuxuan Zheng][郑宇轩],
-    info("yx.zheng766@gmail.com", "(551)226-3046", "zyxdenny", "yuxuanzheng.com", "zyxdenny.linkedin"),
+    info("yx.zheng766@gmail.com", "(551)226-3046", "zyxdenny", "zhengyuxuan.xyz", "zyxdenny.linkedin"),
     body,
 )
