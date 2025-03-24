@@ -173,7 +173,7 @@
   - Used *Raylib* to achive a Mincraft-like game interface.
   ][
   #project[Compiler construction]
-  - Built a compiler that compiles from *ML-ish* code down to *RISC-V*.
+  - Built a compiler that compiles from *ML-ish* code down to *RISC-V* in *OCaml*.
   - Implemented a *type checker* that detects code illness at compile time.
   - Used *Control Graph Analysis* for optimizations including constant propagation,
     dead-code elimination, and loop optimization.
