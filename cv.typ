@@ -172,15 +172,15 @@
   - Applied *load-balancing* techniques to ensure scalability across different input sizes.
   ][
   #project[Infinite world -- The random map generation]
-  - Implemented algorithm based on expression trees that generates Mincraft-like infinite maps
+  - Implemented algorithm based on expression trees that generates Minecraft-like infinite maps
     using *procedural content generation* (PCG).
-  - Parallelized the algorithm using *Rake and Compress* algorithm to reduce the span to $cal(O)(log n)$,
-    where $n$ is the depth of the expression tree, hence accelerated the procedural genration speed.
-  - Used *Raylib* to achive a Mincraft-like game interface.
+  - Parallelized the algorithm using *Rake-and-Compress* algorithm to reduce the span to $cal(O)(log n)$,
+    where $n$ is the depth of the expression tree, hence accelerated the procedural generation speed.
+  - Used *Raylib* to achieve a Minecraft-like game interface.
   ][
   #project[Compiler construction]
   - Built a compiler in *OCaml* that compiles from *ML-ish* code down to *RISC-V*.
-  - Implemented a *type checker* that detects code illness at compile time.
+  - Implemented a *type checker* that detects compile-time errors.
   - Used *Control Graph Analysis* for optimizations including constant propagation and dead-code elimination.
   ]
 
