@@ -74,7 +74,7 @@
       //style: "oblique",
       weight: "bold",
       size: 12pt,
-    )[#title]
+    )[#underline[#title]]
   ]
 }
 
@@ -152,31 +152,36 @@
 #grid[
   #school[M.S. in CS][New York University][01/2024][Exp 12/2025]
   - #item[GPA][3.8/4.0]
-  - #item[Courses][#underline[Compiler], #underline[Parallel Programming], 
-    #underline[Operating Systems], #underline[Big Data App Dev], #underline[Multicore CPU Programming].]
+  // - #item[Courses][#underline[Compiler], #underline[Parallel Programming], 
+  //   #underline[Operating Systems], #underline[Big Data App Dev], #underline[Multicore CPU Programming].]
   ][
   #school[B.E. in ECE][Shanghai Jiao Tong University][09/2019][08/2023]
   - #item[Core GPA][3.7/4.0]
   ]
 
+== Technical Skills
+- *Programming languages:* C++, C, Go, OCaml, Python, Java, SML, Scala, Shell, Elm.
+- *Tools \& DevOps:* Git, Docker, Kubernetes, Nginx, Cloud (AWS, GCP), Hadoop, Spark, Kafka, Ray.
+- *Databases:* MySQL, MariaDB, PostgreSQL, SQLite, MongoDB, Redis, Hive.
+
 == Projects
 #grid[
   #project[Parallel implementation of hash visualization algorithm]
-  - Programmed with *OpenMP* to implement a parallel version of the hash visualization algorithm used in OpenSSH.
-  - Achieved a *work efficient* solution that is embarassingly parallel on the pixel rendering level.
+  - Implemented a *work-efficient* parallel version of OpenSSH’s hash visualization algorithm using *OpenMP*.
+  - Achieved *embarrassingly parallel pixel rendering*, improving performance linearly on multicore CPUs.
+  - Applied *load-balancing* techniques to ensure scalability across different input sizes.
   ][
-  #project[Infinite world--The random map generation]
+  #project[Infinite world -- The random map generation]
   - Implemented algorithm based on expression trees that generates Mincraft-like infinite maps
-    using *procesural content generation* (PCG).
+    using *procedural content generation* (PCG).
   - Parallelized the algorithm using *Rake and Compress* algorithm to reduce the span to $cal(O)(log n)$,
     where $n$ is the depth of the expression tree, hence accelerated the procedural genration speed.
   - Used *Raylib* to achive a Mincraft-like game interface.
   ][
   #project[Compiler construction]
-  - Built a compiler that compiles from *ML-ish* code down to *RISC-V* in *OCaml*.
+  - Built a compiler in *OCaml* that compiles from *ML-ish* code down to *RISC-V*.
   - Implemented a *type checker* that detects code illness at compile time.
-  - Used *Control Graph Analysis* for optimizations including constant propagation,
-    dead-code elimination, and loop optimization.
+  - Used *Control Graph Analysis* for optimizations including constant propagation and dead-code elimination.
   ]
 
 == Work Experience
@@ -184,48 +189,26 @@
   #work[Full Stack Dev Intern][SuXiang Automobile Tech Ltd. (Startup)][Shanghai, China][08/2023][12/2023]
   - Developed a high-performance *single-page web app* using *Elm* (frontend), 
     *Go* with *Gin* (backend), and *MariaDB*.
-  - Deployed mail server, Mattermost, and Nextcloud using *Docker*, 
-    integrating Authentik for *SSO* management (LDAP, OAuth, SAML).
-  - Automated *CI/CD* pipeline using Drone with Gitea,
+  - Designed and deployed self-hosted infrastructure (mail server, Mattermost, Nextcloud) via *Docker*,
+    enabling secure team collaboration. 
+  - Automated *CI/CD* pipeline using Drone+Gitea,
     improving development and deployment efficiency.
   ][
   #work[Big Data Infrastructure Intern][Samoyed Cloud Tech, Ltd.][Shanghai, China][06/2022][09/2022]
   - Processed large-scale financial datasets on *HDFS* for distributed storage and computation.
   - Developed *Spark*-based ETL pipelines to clean, transform, and aggregate financial data for AI/ML training.
+  - Integrated *Kafka* with *Spark Structured Streaming* for real-time data analysis.
   ]
-
-== Skills
-- *Programming languages:* C++, C, Go, OCaml, Python, Java, SML, Scala, Shell, Elm.
-- *Toools \& DevOps:* Git, Docker, Kubernetes, Nginx, Cloud (AWS, GCP), Hadoop, Ray.
-- *Databases:* MySQL, MariaDB, SQLite, MongoDB, Redis, Hive.
 
 ]}
 
-#let side = {
-block[
-#set par(justify: true)
-#emph["Passionate programmer with a deep love for cutting-edge technology and open-source software. Skilled in software development, data analysis, and DevOps, with a strong focus on building stable, efficient solutions."]
-]
-block[
-#v(5pt)
-== Skills
-#skills([Programming Languages], ("C++", "C", "Go", "Python", "Shell", "Elm"))
-#skills([Operating Systems], ("Linux", "MacOS"))
-#skills([Tools \& DevOps], ("Git", "Docker", "Kubernetes", "CI/CD", "Cloud (AWS, GCP)", "Nginx"))
-#skills([Database], ("MySQL", "Mariadb", "SQLite", "Hive"))
-#skills([Documentaion \& Writing], ("LaTeX", "Typst", "Markdown"))
-#skills([Big Data \& Distributed Systems], ("Hadoop", "Spark", "Ray", "Hive"))
-#skills([Machine Learning \& AI], ("AI Signal Processing", "SVM", "CNN"))
-#skills([Efficiency \& Extensibility], ("Vim", "Bash", "All in Linux"))
-]
-}
-
 #let intro = {
-  set align(center)
+  set par(justify: true)
+  set text(style: "oblique", fill: heading_color)
   block(spacing: 0em)[
-    #text(style: "oblique", fill: heading_color)[
-      Passionate programmer with a deep love for building cutting-edge, reliable and simple solutions.
-    ]
+    Passionate Software Engineer with expertise in parallel computing and algorithms design.
+    Deep understanding in OS, compilers, and distributed systems.
+    Committed to building high-performance, reliable, and elegant solutions.
   ]
 }
 
