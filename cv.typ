@@ -160,8 +160,8 @@
   ]
 
 == Technical Skills
-- *Programming languages:* C++, C, Go, OCaml, Python, Java, SML, Scala, Shell, Elm.
-- *Tools \& DevOps:* Git, Docker, Kubernetes, Nginx, Cloud (AWS, GCP), Hadoop, Spark, Kafka, Ray.
+- *Programming languages:* C++, C, Go, OCaml, Python, Java, SML, Scala, Shell, Elm, TypeScript.
+- *Tools \& DevOps:* Git, Docker, Kubernetes, Nginx, Cloud (AWS, GCP), Hadoop, Spark, Kafka.
 - *Databases:* MySQL, MariaDB, PostgreSQL, SQLite, MongoDB, Redis, Hive.
 
 == Projects
@@ -179,14 +179,14 @@
   - Used *Raylib* to achieve a Minecraft-like game interface.
   ][
   #project[Compiler construction]
-  - Built a compiler in *OCaml* that compiles from *ML-ish* code down to *RISC-V*.
-  - Implemented a *type checker* that detects compile-time errors.
+  - Built an end-to-end compiler in *OCaml* that transforms ML-ish source code into optimized *RISC-V* assembly.
+  - Implemented robust *type checking* for compile-time error detection.
   - Used *Control Graph Analysis* for optimizations including constant propagation and dead-code elimination.
   ]
 
 == Work Experience
 #grid[
-  #work[Full Stack Dev Intern][SuXiang Automobile Tech Ltd. (Startup)][Shanghai, China][08/2023][12/2023]
+  #work[Full Stack Dev Intern][SuXiang Automobile Tech Ltd. (Startup)][Shanghai, China][08/2023][09/2024]
   - Developed a high-performance *single-page web app* using *Elm* (frontend), 
     *Go* with *Gin* (backend), and *MariaDB*.
   - Designed and deployed self-hosted infrastructure (mail server, Mattermost, Nextcloud) via *Docker*,
@@ -194,7 +194,7 @@
   - Automated *CI/CD* pipeline using Drone+Gitea,
     improving development and deployment efficiency.
   ][
-  #work[Big Data Infrastructure Intern][Samoyed Cloud Tech, Ltd.][Shanghai, China][06/2022][09/2022]
+  #work[Big Data Infrastructure Intern][Samoyed Cloud Tech, Ltd.][Shanghai, China][06/2022][02/2023]
   - Processed large-scale financial datasets on *HDFS* for distributed storage and computation.
   - Developed *Spark*-based ETL pipelines to clean, transform, and aggregate financial data for AI/ML training.
   - Integrated *Kafka* with *Spark Structured Streaming* for real-time data analysis.
